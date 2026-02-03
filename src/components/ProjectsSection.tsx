@@ -53,7 +53,7 @@ const ProjectsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Projects</span>
+            <span className="text-black">Projects</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             Ventures that define my entrepreneurial spirit
@@ -73,7 +73,7 @@ const ProjectsSection = () => {
             >
               <motion.div
                 className="relative p-6 h-full clay-card overflow-hidden"
-                whileHover={{ 
+                whileHover={{
                   y: -10,
                   transition: { duration: 0.3 }
                 }}
@@ -94,16 +94,14 @@ const ProjectsSection = () => {
                     whileHover={{ rotate: [0, -10, 10, 0] }}
                     transition={{ duration: 0.5 }}
                   >
-                    <project.icon 
-                      className="w-8 h-8"
-                      style={{ color: `hsl(var(--${project.color}))` }}
+                    <project.icon
+                      className="w-8 h-8 text-black"
                     />
                   </motion.div>
 
                   {/* Title */}
-                  <h3 
-                    className="text-xl font-bold mb-1"
-                    style={{ color: `hsl(var(--${project.color}))` }}
+                  <h3
+                    className="text-xl font-bold mb-1 text-black"
                   >
                     {project.title}
                   </h3>
@@ -116,16 +114,16 @@ const ProjectsSection = () => {
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <span 
+                    <span
                       className="text-xs px-2 py-1 rounded-full glass"
-                      style={{ 
+                      style={{
                         backgroundColor: `hsl(var(--${project.color}) / 0.1)`,
                         color: `hsl(var(--${project.color}))`,
                       }}
                     >
                       {project.role}
                     </span>
-                    <span 
+                    <span
                       className="text-xs px-2 py-1 rounded-full glass text-muted-foreground"
                     >
                       {project.impact}
@@ -133,7 +131,7 @@ const ProjectsSection = () => {
                   </div>
 
                   {/* View more */}
-                  <div className="flex items-center gap-1 text-sm text-primary group-hover:gap-2 transition-all font-medium">
+                  <div className="flex items-center gap-1 text-sm text-black group-hover:gap-2 transition-all font-medium">
                     <span>View details</span>
                     <ExternalLink className="w-4 h-4" />
                   </div>
@@ -167,19 +165,17 @@ const ProjectsSection = () => {
               <X className="w-5 h-5" />
             </button>
 
-            <div 
+            <div
               className="inline-block p-3 rounded-xl mb-4 glass"
               style={{ backgroundColor: `hsl(var(--${selectedProject.color}) / 0.1)` }}
             >
-              <selectedProject.icon 
-                className="w-8 h-8"
-                style={{ color: `hsl(var(--${selectedProject.color}))` }}
+              <selectedProject.icon
+                className="w-8 h-8 text-black"
               />
             </div>
 
-            <h3 
-              className="text-2xl font-bold mb-1"
-              style={{ color: `hsl(var(--${selectedProject.color}))` }}
+            <h3
+              className="text-2xl font-bold mb-1 text-black"
             >
               {selectedProject.title}
             </h3>
@@ -188,9 +184,9 @@ const ProjectsSection = () => {
             <p className="text-foreground/80 mb-6">{selectedProject.longDescription}</p>
 
             <div className="flex gap-3">
-              <span 
+              <span
                 className="px-3 py-1.5 rounded-full text-sm glass"
-                style={{ 
+                style={{
                   backgroundColor: `hsl(var(--${selectedProject.color}) / 0.1)`,
                   color: `hsl(var(--${selectedProject.color}))`,
                 }}

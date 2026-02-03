@@ -37,7 +37,7 @@ const AboutSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">About Me</span>
+            <span className="text-black">About Me</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             The story behind the ambition
@@ -52,17 +52,17 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6 glass p-8 rounded-3xl"
           >
-            <p className="text-lg text-foreground/90 leading-relaxed">
-              I'm a passionate <span className="text-primary font-semibold">Digital Business & Entrepreneurship</span> student 
+            <p className="text-lg text-black leading-relaxed">
+              I'm a passionate <span className="text-black font-semibold">Digital Business & Entrepreneurship</span> student
               who believes in building things that matter. My journey combines strategic thinking with hands-on execution.
             </p>
-            <p className="text-lg text-foreground/80 leading-relaxed">
-              With experience at <span className="text-secondary font-semibold">India's biggest ed-tech company</span>, 
-              I've learned how to drive growth, optimize operations, and turn ideas into impact. From growth strategy 
+            <p className="text-lg text-black leading-relaxed">
+              With experience at <span className="text-black font-semibold">India's biggest ed-tech company</span>,
+              I've learned how to drive growth, optimize operations, and turn ideas into impact. From growth strategy
               to business operations, I thrive where creativity meets business.
             </p>
-            <p className="text-lg text-foreground/70 leading-relaxed">
-              When I'm not strategizing, you'll find me launching new ventures, exploring emerging technologies, 
+            <p className="text-lg text-black leading-relaxed">
+              When I'm not strategizing, you'll find me launching new ventures, exploring emerging technologies,
               or connecting with fellow entrepreneurs who dream big.
             </p>
           </motion.div>
@@ -80,26 +80,24 @@ const AboutSection = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.6 + index * 0.15 }}
-                whileHover={{ 
+                whileHover={{
                   scale: 1.02,
                   transition: { duration: 0.2 }
                 }}
                 className="group relative p-6 clay-card cursor-default"
               >
                 <div className="relative flex items-center gap-4">
-                  <div 
+                  <div
                     className="p-3 rounded-xl transition-colors"
                     style={{ backgroundColor: `hsl(var(--${stat.color}) / 0.15)` }}
                   >
-                    <stat.icon 
-                      className="w-8 h-8" 
-                      style={{ color: `hsl(var(--${stat.color}))` }}
+                    <stat.icon
+                      className="w-8 h-8 text-black"
                     />
                   </div>
                   <div>
-                    <p 
-                      className="text-3xl font-bold"
-                      style={{ color: `hsl(var(--${stat.color}))` }}
+                    <p
+                      className="text-3xl font-bold text-black"
                     >
                       {stat.value}
                     </p>

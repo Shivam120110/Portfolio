@@ -65,9 +65,9 @@ const ContactSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-gradient text-glow">Let's Build Something</span>
+            <span className="text-black">Let's Build Something</span>
             <br />
-            <span className="text-foreground">Amazing Together</span>
+            <span className="text-black">Amazing Together</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
             Whether you have a project in mind, want to collaborate, or just want to say hi — I'd love to hear from you.
@@ -91,36 +91,34 @@ const ContactSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
               className="group relative p-5 clay-card transition-all duration-300"
-              whileHover={{ 
+              whileHover={{
                 y: -5,
                 transition: { duration: 0.2 }
               }}
             >
               <div className="relative flex items-center justify-between">
                 <div className="flex items-center gap-4">
-                  <div 
+                  <div
                     className="p-3 rounded-xl glass transition-colors"
-                    style={{ 
+                    style={{
                       backgroundColor: `hsl(var(--${link.color}) / 0.1)`,
                     }}
                   >
-                    <link.icon 
-                      className="w-5 h-5 transition-colors"
-                      style={{ color: `hsl(var(--${link.color}))` }}
+                    <link.icon
+                      className="w-5 h-5 transition-colors text-black"
                     />
                   </div>
                   <div>
-                    <p 
-                      className="font-semibold"
-                      style={{ color: `hsl(var(--${link.color}))` }}
+                    <p
+                      className="font-semibold text-black"
                     >
                       {link.name}
                     </p>
                     <p className="text-sm text-muted-foreground">{link.label}</p>
                   </div>
                 </div>
-                <ArrowUpRight 
-                  className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
+                <ArrowUpRight
+                  className="w-5 h-5 text-muted-foreground group-hover:text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-all"
                 />
               </div>
             </motion.a>
