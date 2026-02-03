@@ -1,11 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { 
-  TrendingUp, 
-  Users, 
-  Settings, 
-  Lightbulb, 
-  BarChart3, 
+import {
+  TrendingUp,
+  Users,
+  Settings,
+  Lightbulb,
+  BarChart3,
   Megaphone,
   Code,
   PresentationIcon
@@ -63,7 +63,7 @@ const SkillsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">Skills & Expertise</span>
+            <span className="text-black">Skills & Expertise</span>
           </h2>
           <p className="text-muted-foreground text-lg">
             The arsenal I bring to every venture
@@ -79,9 +79,8 @@ const SkillsSection = () => {
               transition={{ duration: 0.6, delay: 0.2 + categoryIndex * 0.1 }}
               className="p-6 clay-card"
             >
-              <h3 
-                className="text-lg font-semibold mb-6"
-                style={{ color: `hsl(var(--${category.color}))` }}
+              <h3
+                className="text-lg font-semibold mb-6 text-black"
               >
                 {category.category}
               </h3>
@@ -100,20 +99,18 @@ const SkillsSection = () => {
                         <motion.div
                           className="p-2 rounded-lg glass transition-colors"
                           style={{ backgroundColor: `hsl(var(--${category.color}) / 0.1)` }}
-                          whileHover={{ 
+                          whileHover={{
                             scale: 1.1,
                           }}
                         >
-                          <skill.icon 
-                            className="w-4 h-4"
-                            style={{ color: `hsl(var(--${category.color}))` }}
+                          <skill.icon
+                            className="w-4 h-4 text-black"
                           />
                         </motion.div>
                         <span className="text-foreground/90 font-medium">{skill.name}</span>
                       </div>
-                      <span 
-                        className="text-sm font-medium"
-                        style={{ color: `hsl(var(--${category.color}))` }}
+                      <span
+                        className="text-sm font-medium text-black"
                       >
                         {skill.level}%
                       </span>
@@ -124,12 +121,12 @@ const SkillsSection = () => {
                       <motion.div
                         className="h-full rounded-full"
                         style={{
-                          background: `linear-gradient(90deg, hsl(var(--${category.color})), hsl(var(--${category.color}) / 0.6))`,
+                          background: `linear-gradient(90deg, black, gray)`,
                         }}
                         initial={{ width: 0 }}
                         animate={isInView ? { width: `${skill.level}%` } : {}}
-                        transition={{ 
-                          duration: 1, 
+                        transition={{
+                          duration: 1,
                           delay: 0.6 + categoryIndex * 0.1 + skillIndex * 0.1,
                           ease: "easeOut"
                         }}
@@ -153,7 +150,7 @@ const SkillsSection = () => {
             <motion.span
               key={badge}
               className="px-4 py-2 rounded-full clay-card text-sm text-foreground/80 cursor-default font-medium"
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
                 boxShadow: "0 0 20px hsl(var(--primary) / 0.2)",
               }}

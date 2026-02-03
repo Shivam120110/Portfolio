@@ -99,7 +99,7 @@ const HeroSection = () => {
                 top: '-60px',
                 left: '-10px',
                 right: '-10px',
-                bottom: '-120px',
+                bottom: '-250px',
                 pointerEvents: 'none',
               }}
             >
