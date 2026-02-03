@@ -51,12 +51,9 @@ const Navigation = () => {
                     : "text-black/70 hover:text-black"
                     }`}
                 >
-                  {/* Show clay-card on active OR on hover */}
+                  {/* Show clay-card ONLY on hover */}
                   <motion.div
-                    className={`absolute inset-0 rounded-xl transition-opacity duration-300 ${location.pathname === item.href
-                        ? "opacity-100 clay-card"
-                        : "opacity-0 group-hover:opacity-100 clay-card"
-                      }`}
+                    className="absolute inset-0 rounded-xl transition-opacity duration-300 opacity-0 group-hover:opacity-100 clay-card"
                   />
                   <span className="relative z-10">{item.name}</span>
                 </Link>

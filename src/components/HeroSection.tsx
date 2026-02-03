@@ -99,7 +99,7 @@ const HeroSection = () => {
                 top: '-60px',
                 left: '-10px',
                 right: '-10px',
-                bottom: '-80px',
+                bottom: '-120px',
                 pointerEvents: 'none',
               }}
             >
@@ -108,7 +108,7 @@ const HeroSection = () => {
                 frameBorder="0"
                 allowFullScreen
                 allow="autoplay; fullscreen; xr-spatial-tracking"
-                src="https://sketchfab.com/models/92481c37e4824644967d3b493add5206/embed?ui_controls=0&ui_infos=0&ui_stop=0&ui_hint=0&ui_ar=0&ui_help=0&ui_settings=0&ui_inspector=0&ui_watermark=0&ui_watermark_link=0&ui_annotations=0&transparent=1&autospin=0.3&autostart=1"
+                src="https://sketchfab.com/models/92481c37e4824644967d3b493add5206/embed?ui_controls=0&ui_infos=0&ui_stop=0&ui_hint=0&ui_ar=0&ui_help=0&ui_settings=0&ui_inspector=0&ui_watermark=0&ui_watermark_link=0&ui_annotations=0&transparent=1&autospin=0.3&autostart=1&ui_theme=dark"
                 style={{
                   width: '100%',
                   height: '100%',
