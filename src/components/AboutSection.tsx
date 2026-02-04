@@ -38,7 +38,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-6 mt-[40px]"
+            className="space-y-6 mt-[50px]"
           >
             <p className="text-muted-foreground text-lg font-medium">
               The story behind the ambition
@@ -64,7 +64,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center lg:justify-end mt-[40px]"
+            className="flex justify-center lg:justify-end mt-[50px]"
           >
             <img
               src="/about-character.jpg"
