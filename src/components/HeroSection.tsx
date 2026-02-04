@@ -1,32 +1,8 @@
-import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import TypewriterText from "./TypewriterText";
 
 const HeroSection = () => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const mouseX = useSpring(x, { stiffness: 150, damping: 15 });
-  const mouseY = useSpring(y, { stiffness: 150, damping: 15 });
-
-  function handleMouseMove(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-    const { currentTarget, clientX, clientY } = event;
-    const { left, top, width, height } = currentTarget.getBoundingClientRect();
-    const centerX = left + width / 2;
-    const centerY = top + height / 2;
-
-    // Calculate distance from center normalized to [-1, 1]
-    const normX = (clientX - centerX) / (width / 2);
-    // Rotate Y axis based on X position (left/right)
-    x.set(normX * 15); // 15 degrees max rotation
-
-    // Optional: Rotate X axis based on Y position (up/down) - keep it subtle
-    const normY = (clientY - centerY) / (height / 2);
-    y.set(normY * -10); // -10 degrees max rotation (inverted for natural feel)
-  }
-
-  const rotateY = useTransform(mouseX, (val) => `${val}deg`);
-  const rotateX = useTransform(mouseY, (val) => `${val}deg`);
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Content */}
@@ -109,18 +85,9 @@ const HeroSection = () => {
         {/* Right - 3D Sketchfab Model */}
         <motion.div
           className="hidden lg:block relative h-[500px]"
-          // Apply scale and 3D perspective transform
-          style={{
-            scale: 0.75,
-            perspective: 1000,
-            rotateX,
-            rotateY,
-            transformStyle: "preserve-3d"
-          }}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={() => { x.set(0); y.set(0); }}
-          initial={{ opacity: 0, scale: 0.75 }}
-          animate={{ opacity: 1, scale: 0.75 }}
+          style={{ transform: 'scale(0.9)' }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
           {/* Container with overflow hidden to clip the Sketchfab UI */}

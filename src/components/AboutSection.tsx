@@ -28,21 +28,9 @@ const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden bg-dots">
+    <section className="pb-24 pt-0 px-4 relative overflow-hidden bg-dots -mt-24">
       <div className="max-w-6xl mx-auto" ref={ref}>
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-black">About Me</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            The story behind the ambition
-          </p>
-        </motion.div>
+        {/* Header Removed */}
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Bio text */}
@@ -67,45 +55,18 @@ const AboutSection = () => {
             </p>
           </motion.div>
 
-          {/* Stats cards */}
+          {/* Character Image */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid gap-4"
+            className="flex justify-center lg:justify-end"
           >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.6 + index * 0.15 }}
-                whileHover={{
-                  scale: 1.02,
-                  transition: { duration: 0.2 }
-                }}
-                className="group relative p-6 clay-card cursor-default"
-              >
-                <div className="relative flex items-center gap-4">
-                  <div
-                    className="p-3 rounded-xl transition-colors"
-                    style={{ backgroundColor: `hsl(var(--${stat.color}) / 0.15)` }}
-                  >
-                    <stat.icon
-                      className="w-8 h-8 text-black"
-                    />
-                  </div>
-                  <div>
-                    <p
-                      className="text-3xl font-bold text-black"
-                    >
-                      {stat.value}
-                    </p>
-                    <p className="text-muted-foreground">{stat.label}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
+            <img
+              src="/about-character.jpg"
+              alt="Character"
+              className="w-full max-w-md rounded-2xl shadow-2xl object-cover"
+            />
           </motion.div>
         </div>
       </div>
