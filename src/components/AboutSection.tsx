@@ -32,13 +32,13 @@ const AboutSection = () => {
       <div className="max-w-6xl mx-auto" ref={ref}>
         {/* Header Removed */}
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Bio text */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-6"
+            className="space-y-6 mt-[40px]"
           >
             <p className="text-muted-foreground text-lg font-medium">
               The story behind the ambition
@@ -64,15 +64,13 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center lg:justify-end scale-90"
+            className="flex justify-center lg:justify-end mt-[40px]"
           >
-            <div className="relative p-2 rounded-[10px] bg-white shadow-xl">
-              <img
-                src="/about-character.jpg"
-                alt="Character"
-                className="w-full max-w-sm rounded-[6px] object-cover"
-              />
-            </div>
+            <img
+              src="/about-character.jpg"
+              alt="Character"
+              className="w-[80%] max-w-sm rounded-[10px] object-cover shadow-2xl"
+            />
           </motion.div>
         </div>
       </div>
