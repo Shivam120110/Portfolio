@@ -28,7 +28,7 @@ const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="pb-24 pt-0 px-4 relative overflow-hidden bg-dots -mt-24">
+    <section className="pb-24 pt-0 px-4 relative overflow-hidden bg-dots -mt-12">
       <div className="max-w-6xl mx-auto" ref={ref}>
         {/* Header Removed */}
 
@@ -64,9 +64,9 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center lg:justify-end scale-90"
           >
-            <div className="relative p-2 border-4 border-black/5 rounded-[10px] bg-white shadow-xl">
+            <div className="relative p-2 rounded-[10px] bg-white shadow-xl">
               <img
                 src="/about-character.jpg"
                 alt="Character"
