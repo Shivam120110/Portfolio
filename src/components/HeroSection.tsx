@@ -10,7 +10,7 @@ const HeroSection = () => {
         {/* Left - Text Content */}
         <motion.div
           className="text-center lg:text-left"
-          style={{ paddingLeft: '75px' }}
+          style={{ paddingLeft: '75px', marginTop: '50px' }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -21,7 +21,7 @@ const HeroSection = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            Welcome to my portfolio
+            Welcome to my Game Zone
           </motion.p>
 
           <motion.h1
@@ -85,6 +85,7 @@ const HeroSection = () => {
         {/* Right - 3D Sketchfab Model */}
         <motion.div
           className="hidden lg:block relative h-[500px]"
+          style={{ transform: 'scale(0.9)' }}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
@@ -100,7 +101,6 @@ const HeroSection = () => {
                 left: '-10px',
                 right: '-10px',
                 bottom: '-250px',
-                pointerEvents: 'none',
               }}
             >
               <iframe
