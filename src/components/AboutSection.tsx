@@ -38,8 +38,12 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-6 glass p-8 rounded-3xl"
+            className="space-y-6"
           >
+            <p className="text-muted-foreground text-lg font-medium">
+              The story behind the ambition
+            </p>
+
             <p className="text-lg text-black leading-relaxed">
               I'm a passionate <span className="text-black font-semibold">Digital Business & Entrepreneurship</span> student
               who believes in building things that matter. My journey combines strategic thinking with hands-on execution.
@@ -62,11 +66,13 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex justify-center lg:justify-end"
           >
-            <img
-              src="/about-character.jpg"
-              alt="Character"
-              className="w-full max-w-md rounded-2xl shadow-2xl object-cover"
-            />
+            <div className="relative p-2 border-4 border-black/5 rounded-[10px] bg-white shadow-xl">
+              <img
+                src="/about-character.jpg"
+                alt="Character"
+                className="w-full max-w-sm rounded-[6px] object-cover"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
