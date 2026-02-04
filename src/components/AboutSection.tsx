@@ -28,7 +28,7 @@ const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="pb-24 pt-0 px-4 relative overflow-hidden bg-dots -mt-12">
+    <section className="h-screen overflow-hidden pt-0 px-4 relative bg-dots -mt-20">
       <div className="max-w-6xl mx-auto" ref={ref}>
         {/* Header Removed */}
 
@@ -38,7 +38,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-6 mt-[50px]"
+            className="space-y-6 mt-[80px]"
           >
             <p className="text-muted-foreground text-lg font-medium">
               The story behind the ambition
@@ -64,7 +64,7 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="flex justify-center lg:justify-end mt-[50px]"
+            className="flex justify-center lg:justify-end mt-[80px]"
           >
             <img
               src="/about-character.jpg"
