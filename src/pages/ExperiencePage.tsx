@@ -3,9 +3,9 @@ import ExperienceSection from "@/components/ExperienceSection";
 
 const ExperiencePage = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen w-full relative bg-background">
       <Navigation />
-      <div className="pt-20">
+      <div className="absolute top-0 left-0 w-full pt-20">
         <ExperienceSection />
       </div>
     </div>

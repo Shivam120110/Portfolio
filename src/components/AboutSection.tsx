@@ -28,7 +28,7 @@ const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="h-screen overflow-hidden pt-0 px-4 relative bg-dots -mt-20">
+    <section className="h-screen overflow-hidden pt-0 px-4 relative -mt-20">
       <div className="max-w-6xl mx-auto" ref={ref}>
         {/* Header Removed */}
 

@@ -27,7 +27,7 @@ const Navigation = () => {
 
   return (
     <>
-      <motion.nav
+      <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "glass shadow-soft" : "bg-transparent"
           }`}
       >
@@ -35,7 +35,7 @@ const Navigation = () => {
           {/* Desktop nav - centered */}
           <div className="hidden md:flex items-center gap-2">
             {navItems.map((item, index) => (
-              <motion.div
+              <div
                 key={item.name}
               >
                 <Link
@@ -51,7 +51,7 @@ const Navigation = () => {
                   />
                   <span className="relative z-10">{item.name}</span>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
 
@@ -63,7 +63,7 @@ const Navigation = () => {
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-      </motion.nav>
+      </nav>
 
       {/* Mobile menu */}
       <motion.div
