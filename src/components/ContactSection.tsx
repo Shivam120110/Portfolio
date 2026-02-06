@@ -38,7 +38,7 @@ const ContactSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden bg-dots">
+    <section className="py-24 px-4 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0">
         <motion.div

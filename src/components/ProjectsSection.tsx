@@ -44,7 +44,7 @@ const ProjectsSection = () => {
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden bg-dots">
+    <section className="py-24 px-4 relative overflow-hidden">
       <div className="max-w-6xl mx-auto" ref={ref}>
         <div
           className="text-center mb-16"
