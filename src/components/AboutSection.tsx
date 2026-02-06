@@ -35,9 +35,6 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Bio text */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6 mt-[80px]"
           >
             <p className="text-muted-foreground text-lg font-medium">
@@ -61,9 +58,6 @@ const AboutSection = () => {
 
           {/* Character Image */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
             className="flex justify-center lg:justify-end mt-[80px]"
           >
             <img

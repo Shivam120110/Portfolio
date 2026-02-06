@@ -57,9 +57,6 @@ const SkillsSection = () => {
 
       <div className="max-w-6xl mx-auto relative" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -74,9 +71,6 @@ const SkillsSection = () => {
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.category}
-              initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 + categoryIndex * 0.1 }}
               className="p-6 clay-card"
             >
               <h3
@@ -89,9 +83,6 @@ const SkillsSection = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <motion.div
                     key={skill.name}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={isInView ? { opacity: 1, x: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.4 + categoryIndex * 0.1 + skillIndex * 0.1 }}
                     className="group"
                   >
                     <div className="flex items-center justify-between mb-2">
@@ -141,9 +132,6 @@ const SkillsSection = () => {
 
         {/* Floating badges */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-12 flex flex-wrap justify-center gap-3"
         >
           {["Problem Solver", "Strategic Thinker", "Team Player", "Fast Learner", "Creative Mind"].map((badge, index) => (
@@ -154,9 +142,6 @@ const SkillsSection = () => {
                 scale: 1.05,
                 boxShadow: "0 0 20px hsl(var(--primary) / 0.2)",
               }}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={isInView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ delay: 1 + index * 0.1 }}
             >
               {badge}
             </motion.span>

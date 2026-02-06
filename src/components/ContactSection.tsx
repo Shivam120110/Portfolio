@@ -59,9 +59,6 @@ const ContactSection = () => {
 
       <div className="max-w-4xl mx-auto relative" ref={ref}>
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -76,9 +73,6 @@ const ContactSection = () => {
 
         {/* Social links */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.3 }}
           className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto"
         >
           {socialLinks.map((link, index) => (
@@ -87,9 +81,6 @@ const ContactSection = () => {
               href={link.href}
               target={link.name !== "Email" ? "_blank" : undefined}
               rel={link.name !== "Email" ? "noopener noreferrer" : undefined}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
               className="group relative p-5 clay-card transition-all duration-300"
               whileHover={{
                 y: -5,
@@ -127,9 +118,6 @@ const ContactSection = () => {
 
         {/* Footer note */}
         <motion.p
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.8 }}
           className="text-center text-muted-foreground text-sm mt-16"
         >
           Designed & Built with 💜 • {new Date().getFullYear()}
