@@ -152,7 +152,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white relative overflow-hidden">
+    <section className="w-full bg-white relative">
       <Timeline data={data} />
     </section>
   );

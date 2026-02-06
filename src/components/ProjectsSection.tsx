@@ -46,7 +46,7 @@ const ProjectsSection = () => {
   return (
     <section className="py-24 px-4 relative overflow-hidden bg-dots">
       <div className="max-w-6xl mx-auto" ref={ref}>
-        <motion.div
+        <div
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -55,7 +55,7 @@ const ProjectsSection = () => {
           <p className="text-muted-foreground text-lg">
             Ventures that define my entrepreneurial spirit
           </p>
-        </motion.div>
+        </div>
 
         {/* Projects grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

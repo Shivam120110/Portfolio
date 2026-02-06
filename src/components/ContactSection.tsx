@@ -58,7 +58,7 @@ const ContactSection = () => {
       </div>
 
       <div className="max-w-4xl mx-auto relative" ref={ref}>
-        <motion.div
+        <div
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -69,7 +69,7 @@ const ContactSection = () => {
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
             Whether you have a project in mind, want to collaborate, or just want to say hi — I'd love to hear from you.
           </p>
-        </motion.div>
+        </div>
 
         {/* Social links */}
         <motion.div
