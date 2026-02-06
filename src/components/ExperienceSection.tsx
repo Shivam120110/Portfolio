@@ -34,7 +34,7 @@ const ExperienceSection = () => {
       ),
     },
     {
-      title: "Jul 2025 - Oct 2025",
+      title: "Jul - Oct 2025",
       content: (
         <div className="space-y-4">
           <div className="flex flex-col gap-2">
@@ -152,7 +152,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white relative">
+    <section className="w-full bg-transparent relative">
       <Timeline data={data} />
     </section>
   );
