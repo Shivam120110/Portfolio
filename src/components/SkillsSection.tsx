@@ -56,7 +56,7 @@ const SkillsSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/5 to-transparent" />
 
       <div className="max-w-6xl mx-auto relative" ref={ref}>
-        <motion.div
+        <div
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -65,7 +65,7 @@ const SkillsSection = () => {
           <p className="text-muted-foreground text-lg">
             The arsenal I bring to every venture
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {skillCategories.map((category, categoryIndex) => (
