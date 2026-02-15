@@ -1,35 +1,28 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, Twitter, Github, ArrowUpRight } from "lucide-react";
+import { Mail, Linkedin, Github, ArrowUpRight } from "lucide-react";
 
 const socialLinks = [
   {
     name: "Email",
     icon: Mail,
-    href: "mailto:your.email@example.com",
+    href: "mailto:beushivam@gmail.com",
     color: "primary",
-    label: "your.email@example.com",
+    label: "beushivam@gmail.com",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/in/yourprofile",
+    href: "https://www.linkedin.com/in/beushivam/",
     color: "secondary",
-    label: "/in/yourprofile",
-  },
-  {
-    name: "Twitter",
-    icon: Twitter,
-    href: "https://twitter.com/yourhandle",
-    color: "accent",
-    label: "@yourhandle",
+    label: "/in/beushivam",
   },
   {
     name: "GitHub",
     icon: Github,
-    href: "https://github.com/yourusername",
-    color: "primary",
-    label: "@yourusername",
+    href: "https://github.com/Shivam120110",
+    color: "accent",
+    label: "@Shivam120110",
   },
 ];
 
@@ -62,18 +55,18 @@ const ContactSection = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-black">Let's Build Something</span>
+            <span className="text-black">Let's Build Something Amazing</span>
             <br />
-            <span className="text-black">Amazing Together</span>
+            <span className="text-black">Together!</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Whether you have a project in mind, want to collaborate, or just want to say hi — I'd love to hear from you.
           </p>
         </div>
 
-        {/* Social links */}
+        {/* Social links - all 3 in one row */}
         <motion.div
-          className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto"
         >
           {socialLinks.map((link, index) => (
             <motion.a

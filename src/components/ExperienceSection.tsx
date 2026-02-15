@@ -14,19 +14,19 @@ const ExperienceSection = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Supported end to end operations for launching courses with creators at PW Skills.
+                10,000+ learners analyzed, surfaced key admission & engagement bottlenecks and delivered recommendations to product & ops teams.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Used N8N to automate workflow and repetitive tasks.
+                8 offline centres; 16 TAs managed - oversaw daily operations and ensured consistent, on-time class delivery across all centres.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Analyzed performance data from 10,000+ learners for operational improvements.
+                10+ recurring workflows automated using N8N + Google Sheets - eliminated manual handoffs and improved process reliability.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Coordinated cross functional teams to track timelines and ensure on time course delivery.
+                Coordinated end to end course launches with creators – managed content, QA and cross functional execution to enable timely releases.
               </li>
             </ul>
           </div>
@@ -45,15 +45,19 @@ const ExperienceSection = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Conducted targeted outreach for partnership with a 100% completion rate on assigned contact pipelines.
+                6 partnership opportunities identified (5 national, 1 international) through structured market research and ecosystem mapping.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Performed market research and partnership scouting that identified 5+ national & 1 international government partnership opportunity.
+                Improved visibility across the outreach pipeline – Created centralized partner tracker to manage leads, status and follow ups.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Drafted 2 Memoranda of Understanding (MoUs) to establish formal collaboration opportunities.
+                100% outreach pipeline completed - executed targeted stakeholder outreach and qualified partners toward collaboration stage.
+              </li>
+              <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
+                <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
+                Drafted 2 MoUs enabling formal collaboration discussions and accelerating partnership execution.
               </li>
             </ul>
           </div>
@@ -76,7 +80,7 @@ const ExperienceSection = () => {
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Managed a cross-functional 4-person team (creative, production, social).
+                Cross functional 4 person team (creative, production, social) managed.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
@@ -103,15 +107,19 @@ const ExperienceSection = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Launched a cash-positive pop-up store. Oversaw product sourcing, finance management, and operations execution.
+                ₹23,000 revenue generated in 15 hours – built and operated a cash positive pop up store from scratch.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Secured the 3rd-highest pitch funding, generated ₹23,000 in 15 hours.
+                #2 in revenue & profitability out of 9 teams – optimized product mix and upsell strategy to maximize margins during the event.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Ranked #2 in revenue & profitability amongst 9 competing teams.
+                3rd highest pitch funding secured – delivered investor pitch that got us initial capital for launch.
+              </li>
+              <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
+                <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
+                End to end execution led – sourced products, set up storefront and drove real time sales operations to hit same day revenue targets.
               </li>
             </ul>
           </div>
@@ -124,7 +132,7 @@ const ExperienceSection = () => {
         <div className="space-y-4">
           <div className="flex flex-col gap-2">
             <h4 className="text-2xl font-bold text-black">Team Lead - spign.shop</h4>
-            <span className="text-black/60 font-medium text-lg">Bootcamp Challenge | D2C brand</span>
+            <span className="text-black/60 font-medium text-lg">Bootcamp Challenge | D2C cushions brand</span>
           </div>
           <div className="space-y-4">
             <ul className="space-y-3">
@@ -134,15 +142,15 @@ const ExperienceSection = () => {
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
-                Led product validation and growth experiments.
-              </li>
-              <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
-                <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
                 Drove paid acquisition across Google and Meta Ads; optimized CAC by ~23% and conversion funnels to improve ROAS.
               </li>
               <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
                 <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
                 Managed end-to-end operations with a 5-person team (product, ops, marketing, fulfillment).
+              </li>
+              <li className="flex items-start gap-2 text-sm md:text-base text-neutral-700">
+                <div className="mt-2 w-1.5 h-1.5 rounded-full bg-black shrink-0" />
+                Led product validation and growth experiments.
               </li>
             </ul>
           </div>
