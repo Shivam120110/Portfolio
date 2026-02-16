@@ -60,7 +60,9 @@ const ContactSection = () => {
             <span className="text-black">Together!</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Whether you have a project in mind, want to collaborate, or just want to say hi — I'd love to hear from you.
+            Whether you have a project in mind, want to collaborate, or just want to say hi —
+            <br />
+            I'd love to hear from you.
           </p>
         </div>
 
