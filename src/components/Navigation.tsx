@@ -40,15 +40,11 @@ const Navigation = () => {
               >
                 <Link
                   to={item.href}
-                  className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 group ${location.pathname === item.href
+                  className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${location.pathname === item.href
                     ? "text-black"
                     : "text-black/70 hover:text-black"
                     }`}
                 >
-                  {/* Show clay-card ONLY on hover */}
-                  <motion.div
-                    className="absolute inset-0 rounded-xl transition-opacity duration-300 opacity-0 group-hover:opacity-100 clay-card"
-                  />
                   <span className="relative z-10">{item.name}</span>
                 </Link>
               </div>
